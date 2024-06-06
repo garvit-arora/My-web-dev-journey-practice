@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    color: white;
+}
+td{
+    border: 2px solid red;
+}
+th{
+    border: 3px solid green;
+}
+caption{
+    border: 6px solid blue;
+}
+p{
+    background-color: red;
+
+}
+a{
+    background-color: aqua;
+    scroll-behavior: smooth;
+}
+#new1{
+    background-color: blue;
+
+}
+#new2{
+    background-color: blueviolet;
+}
