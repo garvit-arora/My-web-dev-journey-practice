@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+/<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -105,93 +105,202 @@
         }
     </style>
 
-<br><br><br>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- https://codepen.io/web-dot-dev/pen/yLojraG  - This will tell how a font looks likes-->
-<!-- Importing a font style -->
-<!-- Go to Google fonts and search for a font -->
-<!-- then do the following -->
-<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
-<h3 id="hehelol">Hi how are you</h3>
- <style>
-     #hehelol{
-         @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
-         font-family: "sofia",sans-serif;/*You have to add name of font manually like in this case i typed sofia on my own other font is just option that if sofia is not prsent then sans will be used*/
-        line-height: 10px;
-        letter-spacing: 10px;
-        
-    
+    <br><br><br>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- https://codepen.io/web-dot-dev/pen/yLojraG  - This will tell how a font looks likes-->
+    <!-- Importing a font style -->
+    <!-- Go to Google fonts and search for a font -->
+    <!-- then do the following -->
+    <link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+    <h3 id="hehelol">Hi how are you</h3>
+    <style>
+        #hehelol {
+            @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+            font-family: "sofia", sans-serif;
+            /*You have to add name of font manually like in this case i typed sofia on my own other font is just option that if sofia is not prsent then sans will be used*/
+            line-height: 10px;
+            letter-spacing: 10px;
+
+
         }
-        #news{
+
+        #news {
             line-height: 100px;
             text-transform: uppercase;
             text-decoration: overline;
             text-decoration-color: aqua;
             text-decoration-style: wavy;
             text-decoration-thickness: 10px;
-            /* text-indent: 45px; *//*Gives Space before the line */
+            /* text-indent: 45px; */
+            /*Gives Space before the line */
             text-align: center;
         }
-        
- </style>
-<p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatem similique hic voluptatibus adipisci facere officiis totam tenetur placeat a?</p>
-<p class="lorem1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quis earum laudantium nesciunt corrupti perferendis impedit. Fugit ipsam eaque inventore.</p>
- <!-- Or refer https://www.w3schools.com/css/css_font_google.asp -->
-<!-- To know the size of default things - go to inspect then select item then go to computed and scroll down -->
-<style>
-    .lorem{
-        line-height: 100px;
-        border: 10px solid #ff0000;
-        width: 20px;
-        text-overflow: ellipsis;/*If we do clip instead of ellipsis then it will hide the oveflowing part but will show that can come upto border*/
-        overflow: hidden;/*many options are there like scroll*/
-    }
-    .lorem1{
-        border: 5px solid blue;
-        width: 145px;
-        word-break: break-all;/*This will let the max no. of words to come and break letters if they want to continue in next line*/
-    }
+    </style>
+    <p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatem similique hic
+        voluptatibus adipisci facere officiis totam tenetur placeat a?</p>
+    <p class="lorem1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quis earum laudantium nesciunt
+        corrupti perferendis impedit. Fugit ipsam eaque inventore.</p>
+    <!-- Or refer https://www.w3schools.com/css/css_font_google.asp -->
+    <!-- To know the size of default things - go to inspect then select item then go to computed and scroll down -->
+    <style>
+        .lorem {
+            /* line-height: 100px;
+            border: 10px solid #ff0000;
+            width: 20px;
+            text-overflow: ellipsis; */
+            /* ↑ */
+            /* ↑ */
+            /* ↑ */
+            /* I commented the above code because it was irritating me */
 
+
+
+            /*If we do clip instead of ellipsis then it will hide the oveflowing part but will show that can come upto border*/
+            overflow: hidden;
+            /*many options are there like scroll*/
+        }
+
+        .lorem1 {
+            border: 5px solid blue;
+            width: 145px;
+            word-break: break-all;
+            /*This will let the max no. of words to come and break letters if they want to continue in next line*/
+        }
+    </style>
+
+
+    <h1 id="me">About me</h1>
+    <style>
+        /* If we want to add colors that we have in mind but don't know which color keyword is it like if we want dark yellow but when we type color:darkyellow; then there is no darkyellow color so then we have to visit https://codepen.io/web-dot-dev/pen/ZELGraM and check for appropriate keyword for color we want */
+        #me {
+            color: lawngreen;
+            text-align: center;
+
+        }
+    </style>
+
+    <h3>Types of Coloring a text or item</h3>
+    <ol>
+        <li>Color keywords</li>
+        <li>Hex colors</li>
+        <!-- For hex go to google and search for hex color codes then get a code and use it as color: #00943; -->
+        <li>RGB</li>
+        <!-- For rgb it's just color: rgb(12,45,56) - any values acc to ur need -->
+        <li>RGBA</li>
+        <!-- A is for alpha value that ranges from 0 to 1 and is 1 by default  you can change it acc to need by sliding the slidebar in right of rgb pallete ---- it is basically opacity -->
+        <li>HSL</li>
+        <!-- HSL stands for hue, saturation and lightning
+     so same we can set it as color:hsl(235,50%,80%) - random values acc to ue need -->
+    </ol>
+
+    <!-- Now see cascade and specificity -->
+    <h1 class="cred cblue yellow">
+        Hi this is for checking preferences
+    </h1>
+    <style>
+        h1 {
+            color: green;
+        }
+
+        .cred {
+            color: #ff0000:
+        }
+
+        .cblue {
+            color: blue;
+
+        }
+
+        .yellow {
+            color: yellow;
+        }
+
+        /*Used when h1 is not there -->*/
+        /* The reason why it changed to yellow is the class of yellow is in last and the last one is preffered over the others. */
+        /* When h1 is there then it checks the specificity of all which tells which css selector is most specific -- preference -- inline > id > class >element selector > universal seleector */
+        /* Inline means using style tag along with h1 */
+        /* !important - has most priority */
+    </style>
+    <!-- /* Using attribute selector */ --- kind of along with class selector -->
+    <h6 data-x="a">
+        For attribute
+    </h6>
+    <style>
+        [data-x=a] {
+            background-color: red;
+            color: black;
+        }
+    </style>
+
+
+    <!-- Measuring units -->
+    <!-- Pixel - 196th of an inch -->
+    <!-- em - if th font size was something around 18px then 2em makes it twice 3em makes it thrice and just lik that -->
+    <!-- html is a root element  -->
+    <!-- rem means jitna root element ko milne wala tha usse kitna guna milega like agar styles pr 12px set kiya to 2rem uska double dega jabki em kisi selector ya kisi aur element pr kaam krta hai.. -->
+    <h1 id="yu">
+        We are learning measuring units
+    </h1>
+    <style>
+        #yu {
+            border: 5px solid red;
+            /* width: 1360px; */
+            width: 80vw;
+            /* <!-- vw- view-port width - this won't allow the tesxt to tear when opening on any device..it is a type of responsive size --> */
+    
+            background-color: aquamarine;
+            margin: auto;
+            /* The properties like margin auto and idth can't b set on inlin elements like span; they can only be set on block elements like div.. */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+    <!-- Adding a container -->
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, adipisci.
+    </div>
+    <style>
+        .container {
+            box-sizing: border-box;
+            border: 2px solid #000000;
+            width: 80vw;
+            margin: 23px auto;
+            /* 23px is the margin of top-bottom and auto is from left */
+
+
+            height: 10vh;
+            <!-- /* vh is used to have a responsive height */ -->
+            background-color: aquamarine;
+        }
+    </style>
+    <!-- If we are in laptop then our vmin is height but in phone it's width as in laptop width is more and height is less on display while it is vice-versa in phone -->
+    <div class="cont">
+        I am Another container..
+    </div>
+<style>
+    .cont{
+        color: red;
+        background-color: yellow;
+        width: 100vmin;
+        /* This means if we open website in laptop we will be shown vh as vmin so it is eequivalent to : 100vmin = 100 vh for laptop where vmin is height but if we are having phone 100 vmin = 100 vw */
+        /* And the opposite things are purely valid/applicable for vmax - so in phone height is vmax and in laptop or something with similar screen has width as vmax.. */
+    }
 </style>
 
 
-<h1 id="me">About me</h1>
-<style>
-    /* If we want to add colors that we have in mind but don't know which color keyword is it like if we want dark yellow but when we type color:darkyellow; then there is no darkyellow color so then we have to visit https://codepen.io/web-dot-dev/pen/ZELGraM and check for appropriate keyword for color we want */
-</style>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-- There are many on https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units but you needn't learn these..Just take a reference.. -->
+<!-- --------------------------------------------------- -->
+<!-- --------------------------------------------------- -->
+<!-- --------------------------------------------------- -->
+<!-- --------------------------------------------------- -->
+<!-- minimum width and maximum width are vmin and vmax - same for height ... These say the width/height should be atleast of this value -->
+<!-- % means parent ki percent -->
+ <!-- Like in width:50%; it's the width of parent which is storing it  -->
 
 
 </body>
