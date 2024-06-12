@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A part of my journey towards web dev</title>
+</head>
+
+<body>
+    <!-- Child Selectors -->
+    <div>
+        Hi i am a div
+        <p>Hi I am para inside Div and is styled using child Selectors</p>
+    </div>
+    <style>
+        /* Div ke andar ke para ko style krne ke liye */
+        div>p {
+            background-color: blue;
+            color: gainsboro;
+
+        }
+    </style>
+
+    But now
+    <div>
+        Here is problem ig - Div
+        <article>
+            <p>Now i am descendant of Div and just div >p won't work for me</p>
+        </article>
+    </div>
+    <!-- Using descendant selector -->
+    <style>
+        div p {
+            /* Enter anything u want to design for lal parameters of descendant */
+
+        }
+    </style>
+
+    <!-- Using Universal ones -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to facebook</a>
+    <a href="https://www.web.whatsapp.com">Go to whatsapp</a>
+
+
+    <!-- Pseudo Selector -->
+    <style>
+        a:visited {
+            color: brown;
+
+        }
+
+        a:link {
+            color: pink;
+        }
+
+        a:active {
+            background-color: black;
+        }
+
+        a:hover {
+            background-color: red;
+        }
+
+        p:first-child {
+            /* background-color: bisque; */
+
+
+        }
+    </style>
+    <div class="box">A box baby</div>
+    <div class="box box1 ">Another box baby</div>
+    <style>
+        .box {
+            background-color: red;
+
+        }
+
+        .box1 {
+            background-color: blueviolet;
+            border: 4px solid green;
+            color: cyan;
+            padding: 40px;
+            height: 200px;
+            box-sizing: border-box;
+            /*  <!--It includes all the sizes of content + border+padding but not margin-->*/
+            /* Margin collapse - If 2 margins collapse then the greater one will apply for once only */
+        }
+    </style>
+
+    <h1 id="news">Good News</h1>
+    <p id="news2">Monster has run from the jail..</p>
+    <style>
+        #news2 {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-style: italic;
+            font-weight: bolder;
+            text-decoration: line-through;
+        }
+    </style>
+
+<br><br><br>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- https://codepen.io/web-dot-dev/pen/yLojraG  - This will tell how a font looks likes-->
+<!-- Importing a font style -->
+<!-- Go to Google fonts and search for a font -->
+<!-- then do the following -->
+<link href="https://fonts.googleapis.com/css2?family=Sofia&display=swap" rel="stylesheet">
+<h3 id="hehelol">Hi how are you</h3>
+ <style>
+     #hehelol{
+         @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+         font-family: "sofia",sans-serif;/*You have to add name of font manually like in this case i typed sofia on my own other font is just option that if sofia is not prsent then sans will be used*/
+        line-height: 10px;
+        letter-spacing: 10px;
+        
+    
+        }
+        #news{
+            line-height: 100px;
+            text-transform: uppercase;
+            text-decoration: overline;
+            text-decoration-color: aqua;
+            text-decoration-style: wavy;
+            text-decoration-thickness: 10px;
+            /* text-indent: 45px; *//*Gives Space before the line */
+            text-align: center;
+        }
+        
+ </style>
+<p class="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur voluptatem similique hic voluptatibus adipisci facere officiis totam tenetur placeat a?</p>
+<p class="lorem1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ducimus quis earum laudantium nesciunt corrupti perferendis impedit. Fugit ipsam eaque inventore.</p>
+ <!-- Or refer https://www.w3schools.com/css/css_font_google.asp -->
+<!-- To know the size of default things - go to inspect then select item then go to computed and scroll down -->
+<style>
+    .lorem{
+        line-height: 100px;
+        border: 10px solid #ff0000;
+        width: 20px;
+        text-overflow: ellipsis;/*If we do clip instead of ellipsis then it will hide the oveflowing part but will show that can come upto border*/
+        overflow: hidden;/*many options are there like scroll*/
+    }
+    .lorem1{
+        border: 5px solid blue;
+        width: 145px;
+        word-break: break-all;/*This will let the max no. of words to come and break letters if they want to continue in next line*/
+    }
+
+</style>
+
+
+<h1 id="me">About me</h1>
+<style>
+    /* If we want to add colors that we have in mind but don't know which color keyword is it like if we want dark yellow but when we type color:darkyellow; then there is no darkyellow color so then we have to visit https://codepen.io/web-dot-dev/pen/ZELGraM and check for appropriate keyword for color we want */
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
