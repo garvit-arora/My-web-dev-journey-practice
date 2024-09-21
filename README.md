@@ -1,0 +1,1 @@
+These are the codes of the time I was trying to learn Web Dev and will continue again very soon.. I will also showcase my high end projects on my profile so that people can know about my capabolities.. Thank you..
