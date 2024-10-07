@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My web dev journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h2>
+        Position Properties
+    </h2>
+
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .box {
+            border: 3px solid red;
+            height: 133px;
+            width: 80vw;
+            padding: 3px;
+            margin: 3px;
+            /* by default it has position as static so we can't change much things like top bottom, etc. so we need to use position :relative; to change them ...*/
+        }
+
+        .box2 {
+            background-color: aqua;
+            /* Example of position relative like the things we can do with positiion when set as relative */
+            /* position: relative; */
+            /* top: 30px; */
+            /* left: 20px; */
+        }
+
+        .box1 {
+            background-color: red;
+        }
+
+        .box3 {
+            background-color: blue;
+            /* position: sticky;
+            top: 0px;
+            height: 133px;
+            width: 100%;
+            margin: 0px;
+            padding: 0px; */
+
+        }
+
+        .box4 {
+            background-color: yellow;
+            /* height: 13567px; */
+        }
+
+        .parent {
+            padding: 43px;
+            margin: 34px;
+            border: 6px solid gold;
+        }
+
+        /* When we give position:absolute; with top:0px; then it will go to its parent and ask that are u positioned but the position of parent div is static then it will got o body that dadu of box then it will again ask thatdo u have any position other than static it will deny then it will to great grand father (perdada) and ask the same to html it will say i don't have position set to anything but no1 is above me so it will agree to be set as top:0px; with realative to html ------- basically is is situtated relative to nearest positioned ancestor.. */
+
+
+
+
+        /* By chance if we set position:abosolute; to div with name parent then it will have position realtive to parent only.. */
+
+
+
+
+
+
+/* If we set position:fixed; and set bottom or top orleft or right to it with some value then it will reamin fixed on the screen even if we sctoll down or up but it will still remain on screen and will block our view.. */
+
+
+
+
+
+/* Position:sticky; it's a type of position which makes the element stick to one place.. so when we will scroll it will scroll but will stick to either top or bottom and won't move from one place then.. */
+
+
+/* -------------------Exception here ---------------------------- */
+/* Transform, filter and perspective properties can also make an element appear as positioned.. */
+    </style>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
