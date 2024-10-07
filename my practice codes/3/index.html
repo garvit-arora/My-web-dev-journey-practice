@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web dev Journey</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>
+        Learning about changing display settings in inline, block elements..
+    </h2>
+    <div class="box">
+        I am a box
+    </div>
+    <div class="box2">
+        I am a box
+    </div>
+<style>
+    /* If we will use display :none; then it will remove the element + the space used by it but instead if we will use visibility:hidden; that will also remove element but not the sapce aquired by it.. */
+
+    /* example */
+    /* | */
+    /* | */
+    /* .box{
+        visibility: hidden;
+    } */
+
+
+
+    /* To center the elements use in a box..*/
+    .box2{
+        display: flex;
+        /* Inline flex is also an option to center it in a single line */
+        justify-content: center;
+    }
+
+    /* Display:grid; is also an option for getting various type of appearnces in inspect element.. we can choose any out of them by clicking on the button in fornt of display:grid; .. same thing in this also-- inline-grid also exist for aligning it in one single line*/
+
+    /* You can read about display properties here = https://developer.mozilla.org/en-US/docs/Web/CSS/display */
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h2>
+    Shadows and Outlines from here
+</h2>
+<div class="box3">
+    I am a box..
+</div>
+<style>
+    .box3{
+        border: 4px solid red;
+        padding: 34px;
+        box-shadow: 4px 15px 5px blue;
+        
+    }
+</style><br><br><br>
+<div>
+<img src="image.png" alt="box shadow format"></div>
+<img src="image2.png" alt="text shadow format" width="900px">
+<h2>
+    Diff between border and Outlines
+    
+</h2>
+<pre>
+    In Outline we can increase Outline offset value but can't do it in border
+
+    We can change the border radius to make it look curvy but can't do it in outlines..
+    
+</pre>
+
+
+
+
+<h2>
+    List styline starts from here
+</h2>
+<nav>
+    <ul>
+        <li class="home">Home</li>
+        <li>Pricing</li>
+        <li>Contact</li>
+        <!-- li has display:list-items; as default and we can change it but we won't as it's not a good approach.. -->
+
+
+        <!-- In inspect element it shows that each list item has the text like home and a marker and it gets it all because of display:list-items; -->
+         <!-- We can do one thing - use list-style:none; to remove black dots.. -->
+    </ul>
+</nav>
+<style>
+/* .home{
+    list-style: none;
+    /* It worked */
+    /* Do it first using inspect element and see options to change list style as tehre we get many of them..
+    } */
+
+
+
+     /* But here is better */
+
+     nav ul li {
+        /* list-style: devanagari; */
+        background-color: yellow;
+
+        /* The marker or the numebring we say doesn't come along with list while giving it a bg color so we have to use this below */
+        list-style-position: inside;
+        /* Without this the numbering won't have a bg color when added the bgcolor to list ok ?? */
+
+        /* border: 2px solid black; */
+
+        /* We can add image instead of numbering using  */
+        /* list-style-image:url(https://media.tenor.com/yDHIJR0jxkkAAAAi/rowingat-rowing.gif); */
+
+
+        /* We can also set emojis in lsit style text */
+        /* list-style-type:"⛹"; */
+        
+        
+        
+        
+        /* We can also use this */
+        /* list-style: disc inside url(); */
+        /* but we can either use disk with inside or inside with url (2 at a time) */
+     
+     
+     
+     
+        padding: 23px;
+        /* remember to apply it in list items */
+     
+     
+     
+     }
+     nav ul{
+        list-style: none;
+        
+        display: flex;
+        /* To make them look in horizontal */
+        
+     }
+</style>
+
+
+<h2>
+    Overflow Property
+</h2>
+<div class="box4">
+    <p>Lorem ipsum dolor sit amet consectetur.lorem5 Lorem, ipsum. Lorem ipsum dolor, sit amet consectetur adipisicing.</p>
+</div>
+<style>
+    .box4{
+        border: 3px solid red;
+        width: 5vw;
+        height: 5vh;
+        /* overflow: scroll; */
+        overflow: scroll;
+        /* white-space: nowrap; */
+        /* white-space:nowrap; will lead to no wrapping in the element and will show the text horizontally.. */
+    /* we can also add text-overflow as elipssis so it will show dot at end like ... */
+        /* To hide the overflowing use overflow:hidden; and we can use this in specifically x and y axes */
+        /* we can also type like this
+        overflow: auto hidden -- the first word tells for x axis and other tells for y axis */
+
+
+        
+    
+    
+    }
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

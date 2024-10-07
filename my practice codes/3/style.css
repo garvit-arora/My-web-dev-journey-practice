@@ -1,0 +1,23 @@
+h2 {
+    background-color: black;
+    color: red;
+}
+div.box{
+    border: 6px solid red;
+    padding: 10px;
+    margin: 0px;
+    
+    display: inline;
+
+/* In display inline-block is also an option for making it in one line and placing the content in middle and getting access to width like features to be used in CSS */
+
+    justify-content: center;
+}
+div.box2{
+    border: 6px solid red;
+    padding: 10px;
+    margin: 0px;
+    
+    display: inline;
+    justify-content: center;
+}
