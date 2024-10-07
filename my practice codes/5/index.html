@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>
+        Creating Varibales in CSS
+    </h2>    
+    <style>
+        /* reating variable here */
+        /* We make global variable using root means everything in root can be used globally */
+        :root{
+            --color:blue;
+            --seccolor:yellow;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        h2{
+            background-color: black;
+            color: red;
+        }
+        ul {
+            display: flex;
+        }
+        ul li{
+            list-style: none;
+            padding: 32px;
+            background-color: var(--color);
+        }
+        ul li:first-child{
+            /* This is local variable */
+            --color:pink;
+            background-color: var(--color);
+        }
+        .container{
+            background-color: var(--seccolor);
+        }
+     
+
+    </style>
+
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, possimus!
+    </div>
+
+
+</body>
+</html>
